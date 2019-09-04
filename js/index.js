@@ -90,7 +90,6 @@ maintext[4].textContent = ('p', siteContent["main-content"]["vision-content"])
 maintext[4].textContent = ('p', siteContent["main-content"]["vision-content"])
 
 
-
 const address = document.querySelectorAll('.contact p');
 
 address.forEach((item, i) => {
@@ -111,13 +110,11 @@ newLink.style.color = 'green';
 
 navBar.appendChild(newLink);
 
-
-
 const newLink2 = document.createElement('a');
 
 newLink2.textContent = "Events";
 
 newLink2.style.color = 'green';
 
-navBar.appendChild(newLink2);
+navBar.prepend(newLink2);
 
